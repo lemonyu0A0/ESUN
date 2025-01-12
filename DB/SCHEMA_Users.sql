@@ -1,0 +1,7 @@
+   CREATE TABLE Users (
+    UserID NVARCHAR(255) PRIMARY KEY,
+    PhoneNumber NVARCHAR(20) NOT NULL UNIQUE,
+    PasswordHash NVARCHAR(255) NOT NULL,
+    RegistrationDate DATETIME DEFAULT GETDATE(),
+	LastLoginTime DATETIME NULL
+);

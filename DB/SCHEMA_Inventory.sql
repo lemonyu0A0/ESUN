@@ -1,0 +1,6 @@
+CREATE TABLE Inventory (
+    InventoryID NVARCHAR(255) PRIMARY KEY,
+    ISBN NVARCHAR(255) NOT NULL,
+    StoreTime DATETIME NULL,
+    Status NVARCHAR(20) NULL
+);
